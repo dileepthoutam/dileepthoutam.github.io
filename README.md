@@ -1,8 +1,5 @@
 # CS FUNDAMENTALS
 
-### Python Tutorial
-- [Introduction to Python](./python/intro-to-python.md)
+### The Ultimate Computer Science course you need
 
-### CS FUNDAMENTALS (FIRST DRAFT)
-- [first draft curriculum](./cs-fundamentals/README.md)
-
+### SYLLABUS
