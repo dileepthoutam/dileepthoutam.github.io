@@ -11,59 +11,9 @@
 </head>
 <body>
 
-    <div class="d-grid justify-content-center">
-        <h1 id="main-heading">Bubble Sort</h1>
-
-        <input type="text" id="array" placeholder="Enter your array here" required>
-        <p id="error-message"></p>
-        <div class="d-flex-2">
-            <button id="sort">Sort the array</button>
-            <button id="clear">Clear the array</button>
-        </div>
-
-        <br>
-        <p id="display-output"></p>
-
+    <div class="container">
+        <h1>Dileep Thoutam</h1>
     </div>
-
-    <script>
-
-        $(document).ready(function () {
-            $("#sort").click(function () {
-                var arr = $("#array").val().split(" ").map(Number);
-
-                if (arr.some(isNaN)) {
-                    $("#display-output").html("Enter a valid input");
-                    return;
-                }
-
-                bubbleSort(arr);
-
-                arr = arr.join(" ");
-
-                $("#display-output").html(arr);
-            });
-
-            $("#clear").click(function () {
-                $("#array").val('');
-                $("#display-output").html('');
-            });
-        });
-
-        function bubbleSort(arr) {
-            for (let i = 0; i < arr.length; i++) {
-                for (let j = 0; j < arr.length - i - 1; j++) {
-                    if (arr[j] > arr[j + 1]) {
-                        let temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
-                    }
-                }
-            }
-        }
-
-    </script>
-
 
 </body>
 </html>
