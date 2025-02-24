@@ -1,81 +1,86 @@
-- [Binary Search](#binary-search)
-- [Linear Search](#linear-search)
-- [Bubble Sort](#bubble-sort)
-- [Selection Sort](#selection-sort)
-- [Insertion Sort](#insertion-sort)
+# Java
+- Classes and Objects
+- Encapsulation
+- Polymorphism
+- Abstraction
+- Composition
+- Inheritance
+- Packages and Interfaces
+- Enums, Autoboxing
+- Exception handling
+- Multithreading
+- Generics
+- Lambda expressions
+- Switch expresions, records and sealed classes
+- Modules
+- Collections
+- String and StringBuilder
+- File reading and writing
+- Date and Time classes
+- Threads and concurrency
+- The Stream API
+- java.io and java.nio
 
-### Binary Search
+# Spring Boot
+- introduction to spring boot and understand why spring boot exists
+- spring boot starter packs
+- auto configuration
+- dependency injection and inversion of control
+- aspect oriented programming
+- spring boot web and rest apis
+- controllers, get, post mapping, path variables and query params
+- exception handling via @ControllerAdvice and @ExceptionHandler
+- Validation with @Valid and @Validated
+- CORS
+- Api filtering
+- spring boot data and persistence
+- Learn about @Transactional
+- @Async writes
+- CRUD operations with JPA
+- What is @Entity and @Repository
+- spring-security
+- @EnableWebSecurity
+- Learn about OWASP
+- spring boot configuration and profiles such as dev, uat, prod
+- property injection and binding
+- spring boot testing
+- rest vs event driven architecture
+- spring boot scheduling and batch processing
+- concurrency and performance
+- @Cacheable
+- observability and monitoring via actuator
+- microservice patterns
+- try mongo db with spring and graphql with spring
+- gRPC
+- web flux and non-blocking IO
+- microservice patterns
+- service discovery, api gateway, circuit breakers, spring boot and k8s
 
-Binary search is a divide and conquer algorithm. It's a very efficient algorithm with time complexity *O(logn)*.
+# SQL
+- understand relational databases
+- sql
+- basic queries, aggregate functions, nested queries
+- joins, views, authorization
+- transactions
+- indexing
+- functions and procedures
+- triggers
+- understanding database design
+- use JDBC with your relational DB
 
-```python
-def binary_search(arr, target):
-    start = 0
-    end = len(arr) - 1
-    while start <= end:
-        mid = start + (end - start) // 2
-        if target == arr[mid]:
-            return mid
-        elif target < arr[mid]:
-            end = mid - 1
-        else:
-            start = mid + 1
-    return -1
-```
+# Design Pattenrs
+- Observer pattern
+- Decorator pattern
+- Singleton pattern
+- Factory pattern
+- Builder pattern
+- Adapter pattern and facade pattern
+- Proxy pattern
 
-### Linear Search
-
-Linear search is a straight forward algorithm where you iterate through every element until you find what you want.
-
-```python
-def linear_search(arr, target):
-    for x in arr:
-        if x == target:
-            return True
-    return False
-```
-
-### Bubble Sort
-
-Bubble sort is a simple sorting algorithm. You swap the adjacent elements until you get the sorted array. 
-Ofcourse it's expensive. Time complexity is *O(logn)*.
-
-```python
-def bubble_sort(arr):
-    for i in range(len(arr)):
-        for j in range(len(arr) - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-```
-
-### Selection Sort
-
-Selection sort algorithm is a bit different where first you find out the minimum element and then swap it 
-with the current element. Time complexity is *O(logn)*.
-
-```python
-def selection_sort(arr):
-    for i in range(len(arr)):
-        min_index = i
-        for j in range(i + 1, len(arr)):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
-```
-
-### Insertion Sort
-
-Insertion sort is a bit different that bubble sort and selection sort. You iterate through the array, 
-you swap out minimum element until it's sorted.
-
-```python
-def insertion_sort(arr):
-    for i in range(1, len(arr)):
-        current = arr[i]
-        j = i - 1
-        while j >= 0 and arr[j] > current:
-            arr[j + 1] = arr[j]
-            j -= 1
-        arr[j + 1] = current
-```
+# System Design
+- Basic terminology
+- Understand architecture diagrams
+- CAP theorem
+- Understand vertical and horizontal scaling
+- a lot more, can't write 'em all here
 
