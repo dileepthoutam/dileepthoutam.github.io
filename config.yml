@@ -1,0 +1,18 @@
+title: Dileep’s Blog 
+description: I sometimes write about software.
+author: Dileep Thoutam
+
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+url: "https://dileepthoutam.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /posts/:title/
+
+profile:
+  name: Dileep Thoutam
+  bio: >
+    Full stack developer working with Java, Spring Boot, and Angular.
+    Exploring Go, Rust, and Python for automation.
+    Thinking out loud about AI and the future of our industry.
